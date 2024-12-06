@@ -1,0 +1,174 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background-color:#f0e6c0;
+    color: #4a1c2b;
+    
+}
+
+.top-banner {
+    background-color: #f0e6c0;
+    color: #4a1c2b;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.shipping-banner {
+    background-color: #8b1e4b;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+header {
+    background-color:#f0e6c0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #4a1c2b;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #8b1e4b;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    border: 2px solid #4a1c2b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 15px 0;
+    text-align: left;
+   
+}
+
+.product-title {
+    color: #4a1c2b;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+.product-price {
+    color: #8b1e4b;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #8b1e4b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.image-container :hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.a{
+    color: #8b1e4b;
+}
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(166, 26, 26, 0.56);
+  }
+  .image-scroll {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    gap: 10px; /* Adds space between images */
+    max-width: 100%; /* Limit the maximum width */
+    padding: 20px;
+  }
+  
+  .image-scroll img {
+    width: 200px; /* Set a fixed width for each image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image doesn't stretch/distort */
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+  }
+  
+  .image-scroll::-webkit-scrollbar {
+    height: 8px; /* Custom scrollbar height */
+  }
+  
+  .image-scroll::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px;
+  }
+  
+  .image-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Hover color for scrollbar */
+  }
